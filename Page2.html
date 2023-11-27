@@ -1,113 +1,100 @@
-
-
-
 <!DOCTYPE html>
 <html dir="rtl">
 <head>
     <meta charset="utf-8">
     <title>رؤسای پیشین دانشگاه</title>
-    <link rel="stylesheet" href="style.css">
+    <script>
+        function selectPresident(name) {
+            document.getElementById("selected-president").innerText = "رییس انتخاب شده: " + name;
+        }
+    </script>
 </head>
 <body>
 
     <header>
-          <nav>
-        <ul>
-            <li><a href="index.html">صفحه اصلی</a></li>
-
-
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">صفحه اصلی</a></li>
-
-
-        </ul>
-    </nav>
 
     <main>
         <div>
             <h1>رؤسای پیشین دانشگاه</h1>
-    <br/>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>نام و نام خانوادگی</th>
-                <th>مدت ریاست</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>محمود اسلامی</td>
-                <td>(۱۳۵۲-۱۳۵۳)</td>
-            </tr>
-            <tr>
-                <td>احسان الله احدیت</td>
-                <td>(۱۳۵۳-۱۳۵۴)</td>
-            </tr>
-            <tr>
-                <td>سیداحمد آرام‌فر</td>
-                <td>(۱۳۵۴-۱۳۵۵)</td>
-            </tr>
-            <tr>
-                <td>فیروز خوش‌ضمیر</td>
-                <td>(۱۳۵۶-۱۳۵۷)</td>
-            </tr>
-            <tr>
-                <td>محمود رهنما، حسین پورزاهد، غلامحسین ریاضی</td>
-                <td>(۱۳۵۷-۱۳۵۸)</td>
-            </tr>
-            <tr>
-                <td>علی شریف</td>
-                <td>(۱۳۵۹-۱۳۷۲)</td>
-            </tr>
-            <tr>
-                <td>تقی شامخی</td>
-                <td>(۱۳۷۲-۱۳۷۵)</td>
-            </tr>
-            <tr>
-                <td>مهدی معرفت</td>
-                <td>(۱۳۷۵-۱۳۷۷)</td>
-            </tr>
-            <tr>
-                <td>مجتبی شریعتی نیاسر</td>
-                <td>(۱۳۷۷-۱۳۸۱)</td>
-            </tr>
-            <tr>
-                <td>حسن دقیق</td>
-                <td>(۱۳۸۱-۱۳۸۶)</td>
-            </tr>
-            <tr>
-                <td>سید جواد ساداتی نژاد</td>
-                <td>(۱۳۸۶-۱۳۹۰)</td>
-            </tr>
-            <tr>
-                <td>کتابی عباس</td>
-                <td>(۱۳۹۰-۱۳۹۳)</td>
-            </tr>
-            <tr>
-                <td>عباس زراعت</td>
-                <td>(۱۳۹۳-۱۴۰۰)</td>
-            </tr>
-            <tr>
-                <td>کتابی عباس</td>
-                <td>(۱۴۰۰-اکنون)</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    </div>
+            <br/>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>نام و نام خانوادگی</th>
+                        <th>مدت ریاست</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="selectPresident('محمود اسلامی')">
+                        <td>محمود اسلامی</td>
+                        <td>(۱۳۵۲-۱۳۵۳)</td>
+                    </tr>
+                    <tr onclick="selectPresident('احسان الله احدیت')">
+                        <td>احسان الله احدیت</td>
+                        <td>(۱۳۵۳-۱۳۵۴)</td>
+                    </tr>
+                    </tr>
+                    <tr onclick="selectPresident('سیداحمد آرام‌فر')">
+                        <td>سیداحمد آرام‌فر</td>
+                        <td>(۱۳۵۴-۱۳۵۵)</td>
+                    </tr>
+                  
+                    <tr onclick="selectPresident('فیروز خوش‌ضمیر')">
+                        <td>فیروز خوش‌ضمیر</td>
+                        <td>(۱۳۵۶-۱۳۵۷)</td>
+                    </tr>
+                    <tr onclick="selectPresident('محمود رهنما، حسین پورزاهد، غلامحسین ریاضی')">
+                        <td>محمود رهنما، حسین پورزاهد، غلامحسین ریاضی</td>
+                        <td>(۱۳۵۷-۱۳۵۸)</td>
+                    </tr>
+                    <tr onclick="selectPresident('علی شریف')">
+                        <td>علی شریف</td>
+                        <td>(۱۳۵۹-۱۳۷۲)</td>
+                    </tr>
+                    <tr onclick="selectPresident('تقی شامخی')">
+                        <td>تقی شامخی</td>
+                        <td>(۱۳۷۲-۱۳۷۵)</td>
+                    </tr>
+                    <tr onclick="selectPresident('مهدی معرفت')">
+                        <td>مهدی معرفت</td>
+                        <td>(۱۳۷۵-۱۳۷۷)</td>
+                    </tr>
+                    <tr onclick="selectPresident('مجتبی شریعتی نیاسر')">
+                        <td>مجتبی شریعتی نیاسر</td>
+                        <td>(۱۳۷۷-۱۳۸۱)</td>
+                    </tr>
+                    <tr onclick="selectPresident('حسن دقیق')">
+                        <td>حسن دقیق</td>
+                        <td>(۱۳۸۱-۱۳۸۶)</td>
+                    </tr>
+                    <tr onclick="selectPresident('سید جواد ساداتی نژاد')">
+                        <td>سید جواد ساداتی نژاد</td>
+                        <td>(۱۳۸۶-۱۳۹۰)</td>
+                    </tr>
+                    <tr onclick="selectPresident('کتابی عباس')">
+                        <td>کتابی عباس</td>
+                        <td>(۱۳۹۰-۱۳۹۳)</td>
+                    </tr>
+                    <tr onclick="selectPresident('عباس زراعت')">
+                        <td>عباس زراعت</td>
+                        <td>(۱۳۹۳-۱۴۰۰)</td>
+                    </tr>
+                    <tr onclick="selectPresident('کتابی عباس')">
+                        <td>کتابی عباس</td>
+                        <td>(۱۴۰۰-اکنون)</td>
+                    </tr>
 
-
-        <p>
-            <sub>©</sub>
-            <sub>کلیه حقوق متعلق به دانشگاه کاشان می‌باشد.</sub>
-        </p>
-  
- 
+                </tbody>
+            </table>
+            <br>
+            <p id="selected-president">رییس انتخاب شده: -</p>
+        </div>
     </main>
 
     <footer>
