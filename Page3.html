@@ -7,40 +7,43 @@
 </head>
 <body>
 
-     <header>
-          <nav>
-        <ul>
-            <li><a href="index.html">صفحه اصلی</a></li>
-
-
-        </ul>
-    </nav>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">صفحه اصلی</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <div>
             <h1>ارتباط با دانشگاه</h1>
-    <br>
-    <b>:راه های ارتباطی با دانشگاه</b>
-    <br/>
-    <br>
-    <strong>نشانی:</strong>
-    <i>کاشان، کیلومتر ۶ بلوار قطب راوندی، دانشگاه کاشان</i>
-    <br/>
-    <br>
-    <em>پست الکترونیکی:</em>
-    <em>info@kashanu.ac.ir</em>
-    <br/>
-    <br>
-    <em>تلفن:</em>
-    <em>۰۳۱۵۵۹۱۹</em>
-    <br/>
-    <br>
+            <br>
+            <b>:راه های ارتباطی با دانشگاه</b>
+            <br/>
+            <br>
+            <strong>نشانی:</strong>
+            <i>کاشان، کیلومتر ۶ بلوار قطب راوندی، دانشگاه کاشان</i>
+            <br/>
+            <br>
+            <em>پست الکترونیکی:</em>
+            <em>info@kashanu.ac.ir</em>
+            <br/>
+            <br>
+            <em>تلفن:</em>
+            <em>۰۳۱۵۵۹۱۹</em>
+            <br/>
+            <br>
+
+            <form id="commentForm">
+                <label for="comment">نظر شما:</label>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+                <br/>
+                <button type="button" onclick="submitComment()">ارسال نظر</button>
+            </form>
+
+            <p id="confirmationMessage"></p>
         </div>
-
-      
-
-        
 
         <p>
             <sub>©</sub>
@@ -49,12 +52,22 @@
     </main>
 
     <footer>
-
         <div>
             <a href="Page2.html">درباره ما</a>
             <a href="Page3.html">تماس با ما</a>
         </div>
     </footer>
+
+    <script>
+        function submitComment() {
+
+            var comment = document.getElementById('comment').value;
+            // در اینجا می‌توانید دستورات مربوط به ذخیره یا ارسال نظر را قرار دهید
+
+            // نمایش الرت به کاربر
+            alert('نظر شما ارسال شد!');
+        }
+    </script>
 
 </body>
 </html>
