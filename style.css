@@ -1,18 +1,19 @@
+
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #3498db; 
+    background-color: var(--main-color);
     padding: 10px;
     text-align: center;
     position: relative;
 }
 
 nav {
-    background-color: #333;
+    background-color: var(--main-color);
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -45,14 +46,14 @@ main {
 }
 
 main div {
-    background-color: #ecf0f1; 
+    background-color: var(--background-grey);
     padding: 20px;
     margin-bottom: 20px;
 }
 
 a {
     text-decoration: none;
-    color: #007BFF;
+    color: var(--link-color);
 }
 
 ul {
@@ -63,7 +64,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--main-color);
     color: white;
     text-align: center;
     padding: 10px;
@@ -81,11 +82,11 @@ footer div a img {
 }
 
 .background-grey {
-    background-color: #ecf0f1; 
+    background-color: var(--background-grey);
 }
 
 .color-silver {
-    color: silver;
+    color: var(--color-silver);
 }
 
 main img {
@@ -108,9 +109,6 @@ th, td {
     text-align: center;
 }
 
-th {
-    background-color: #f2f2f2;
-}
 
 
 @media print {
@@ -129,11 +127,5 @@ th {
         text-align: center;
     }
 
-    th {
-        background-color: #f2f2f2;
-    }
 
-    tr:hover {
-        background-color: transparent;
-    }
 }
