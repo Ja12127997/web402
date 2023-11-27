@@ -5,18 +5,14 @@ body {
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #3498db; /* رنگ زرد برای هدر */
     padding: 10px;
     text-align: center;
     position: relative;
-
-}
-header {
-     /* افزودن z-index برای هدر */
 }
 
 nav {
-    background-color: #333;
+    background-color: #333; /* رنگ تیره برای منو */
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -44,12 +40,12 @@ nav a {
 
 main {
     padding: 20px;
-    margin-top: 50px; /* افزودن margin-top تا منو نیز مخفی نشود */
-    margin-bottom: 70px; /* افزودن margin-bottom تا محتوا زیر footer نروید */
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
 
 main div {
-    background-color: #f0f0f0;
+    background-color: #ecf0f1; /* رنگ زرد برای بخش‌های مختلف */
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -84,19 +80,17 @@ footer div a img {
     margin: 0 5px;
 }
 
-
-
 .background-grey {
-    background-color: #f0f0f0;
+    background-color: #ecf0f1; /* رنگ زرد برای زمینه‌های خاکستری */
 }
 
 .color-silver {
     color: silver;
 }
+
 main img {
     width: 100%;
     height: auto;
-
 }
 
 table {
@@ -118,14 +112,10 @@ th {
     background-color: #f2f2f2;
 }
 
-tr:hover {
-    background-color: #f5f5f5;
-}
-
 
 @media print {
     body {
-        font-size: 12pt; /* اندازه فونت برای چاپ */
+        font-size: 12pt;
     }
 
     table {
