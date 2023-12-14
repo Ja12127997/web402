@@ -120,18 +120,7 @@ th {
     border-radius: 5px;
     cursor: pointer;
 }
-.image-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999;
-}
 
-.image-container img {
-  width: 100%;
-  border-radius: 8px;
-}
 @media print {
     body {
         font-size: 12pt;
