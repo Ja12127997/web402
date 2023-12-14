@@ -26,8 +26,8 @@
         </div>
 
 
-
-
+      <div id="imgdiv"/>
+      <button id="showImageBtn" class="large-button">نمایش عکس دانشکده</button>
 
         <p>
             <sub>©</sub>
@@ -44,4 +44,19 @@
     </footer>
 
 </body>
+
+  <script>
+  document.getElementById('showImageBtn').addEventListener('click', function() {
+    var imageContainer = document.createElement('div');
+    imageContainer.classList.add('image-container');
+
+    var image = document.createElement('img');
+    image.src = 'sater.jpg'; 
+    image.alt = 'دانشکده';
+
+    imageContainer.appendChild(image);
+    document.body.appendChild(imageContainer);
+  });
+
+  </script>
 </html>
