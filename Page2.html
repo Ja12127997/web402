@@ -3,11 +3,29 @@
 <head>
     <meta charset="utf-8">
     <title>رؤسای پیشین دانشگاه</title>
-    <script>
-        function selectPresident(name) {
-            document.getElementById("selected-president").innerText = "رییس انتخاب شده: " + name;
+<script>
+    function selectPresident(name) {
+        var selectedPresidentInfo = "رییس انتخاب شده: " + name ;
+
+        // ایجاد المان p جدید
+        var newParagraph = document.createElement("p");
+
+        // تنظیم متن المان
+        newParagraph.innerText = selectedPresidentInfo;
+
+        // افزودن المان به المان با id "selected-president"
+        document.getElementById("div1").appendChild(newParagraph);
+    }
+    function clearSelectedPresident() {
+        var selectedPresidentElement = document.getElementById("div1");
+
+        // حذف همه المان‌های فرزند
+        while (selectedPresidentElement.firstChild) {
+            selectedPresidentElement.removeChild(selectedPresidentElement.firstChild);
         }
-    </script>
+    }
+</script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -94,8 +112,15 @@
                 </tbody>
             </table>
             <br>
-            <p id="selected-president">رییس انتخاب شده: -</p>
+
         </div>
+        <div id="div1">
+
+        <div>
+            <button onclick="clearSelectedPresident()"> پاک کردن انتخاب شده ها</button>
+        </div>
+
+        
     </main>
 
     <footer>
