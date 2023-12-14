@@ -47,7 +47,10 @@
         <br>
         <a href="Page3.html">ارتباط با دانشگاه</a>
         </br>
-
+        <br>
+            <button class="large-button" onclick="changePageTitle()">تغییر عنوان</button>
+        </br>
+        
         <p>
             <sub>©</sub>
             <sub>کلیه حقوق متعلق به دانشگاه کاشان می‌باشد.</sub>
@@ -64,6 +67,9 @@
     <script>
         function showAlert(departmentName) {
             alert('شما روی دانشکده ' + departmentName + ' کلیک کرده‌اید!');
+        }
+        function changePageTitle() {
+            document.getElementById('pageTitle').innerText = 'صفحه اصلی - عنوان تغییر کرد!';
         }
     </script>
 
