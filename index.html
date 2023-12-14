@@ -28,10 +28,11 @@
 
         <div>
             <h1>تاریخچه</h1>
-            <p>
+            <p id="historyText">
                 دانشگاه کاشان به عنوان اولین مؤسسهٔ آموزش عالی در منطقهٔ کاشان در سال ۱۳۵۲ توسط محمود اسلامی تأسیس شد و مهرماه ۱۳۵۳ با پذیرش ۲۰۰ دانشجو در دو رشتهٔ ریاضی و فیزیک آغاز به کار کرد.
             </p>
         </div>
+
 
         <h1>دانشکده ها</h1>
         <ul>
@@ -48,7 +49,7 @@
         <a href="Page3.html">ارتباط با دانشگاه</a>
         </br>
         <br>
-            <button class="large-button" onclick="changePageTitle()">تغییر عنوان</button>
+            <button class="large-button" onclick="changePageTitle()">تغییر تاریخچه</button>
         </br>
         
         <p>
@@ -68,9 +69,14 @@
         function showAlert(departmentName) {
             alert('شما روی دانشکده ' + departmentName + ' کلیک کرده‌اید!');
         }
-        function changePageTitle() {
-            document.getElementById('title').innerText = 'عنوان تغییر کرد!';
+
+        function changeHistoryText() {
+        var historyElement = document.getElementById('historyText');
+             if (historyElement) {
+                historyElement.innerText = "متن جدید تاریخچه دانشگاه کاشان...";
+            }
         }
+
     </script>
 
 </body>
