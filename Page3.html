@@ -44,13 +44,45 @@
 
             <p id="confirmationMessage"></p>
         </div>
+        <div>
+        <b>نام استاد و درصد رضایت خود را وارد کنین</b>
+        <div/>
+       <div>
+          <label>نام(کلید ۱):</label>
+          <input type="text" id="key1">
+          <br>
+          <label>مقدار ۱:</label>
+          <input type="text" id="value1">
+          <br><br>
+
+          <label>نام(کلید ۲):</label>
+          <input type="text" id="key2">
+          <br>
+          <label>مقدار ۲:</label>
+          <input type="text" id="value2">
+          <br><br>
+
+          <label>نام(کلید ۳):</label>
+          <input type="text" id="key3">
+          <br>
+          <label>مقدار ۳:</label>
+          <input type="text" id="value3">
+          <br><br>
+
+          <button onclick="createObject()">ذخیره و نمایش</button>
+      </div>
+
+    <div id="result"></div>
 
         <p>
             <sub>©</sub>
             <sub>کلیه حقوق متعلق به دانشگاه کاشان می‌باشد.</sub>
         </p>
     </main>
+    
 
+
+</body>
     <footer>
         <div>
             <a href="Page2.html">درباره ما</a>
@@ -64,6 +96,33 @@
             var comment = document.getElementById('comment').value;
 
             alert('نظر شما ارسال شد!');
+        }
+                function createObject() {
+            var key1 = document.getElementById("key1").value;
+            var value1 = document.getElementById("value1").value;
+
+            var key2 = document.getElementById("key2").value;
+            var value2 = document.getElementById("value2").value;
+
+            var key3 = document.getElementById("key3").value;
+            var value3 = document.getElementById("value3").value;
+
+            var object = {
+                [key1]: value1,
+                [key2]: value2,
+                [key3]: value3
+            };
+
+            displayResult(object);
+        }
+
+        function displayResult(object) {
+            var resultContainer = document.getElementById("result");
+            resultContainer.innerHTML = "<h2>اساتید و نمرات داده شده</h2>";
+
+            for (var key in object) {
+                resultContainer.innerHTML += "<p>" + key + ": " + object[key] + "</p>";
+            }
         }
     </script>
 
